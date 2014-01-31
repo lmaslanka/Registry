@@ -6,6 +6,7 @@ A replacement for switch statements using a dictionary object and generics.
 Example:
 
 `long id = GetId();`
+
 `string option = GetOption();`
 
 switch (option)

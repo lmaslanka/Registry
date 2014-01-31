@@ -9,26 +9,40 @@ Example:
 
 `string option = GetOption();`
 
-switch (option)
-{
-   case "OptionA":
-       return ExecuteOptionA(id);
-   case "OptionB":
-       return ExecuteOptionB(id);
-   case "OptionC":
-       return ExecuteOptionC(id);
-   default:
-       return ExecuteOptionA(id);
-}
+`switch (option)`
+
+`{`
+
+`   case "OptionA":`
+
+`       return ExecuteOptionA(id);`
+
+`   case "OptionB":`
+
+`       return ExecuteOptionB(id);`
+
+`   case "OptionC":`
+
+`       return ExecuteOptionC(id);`
+
+`   default:`
+
+`       return ExecuteOptionA(id);`
+
+`}`
 
 This code using the Registry library;
 
 `long id = GetId();`
-string option = GetOption();
-var options = new Registry<string, long, Func<long, string>>(ExecuteOptionA);
 
-options.Register("OptionA", ExecuteOptionA);
-options.Register("OptionB", ExecuteOptionB);
-options.Register("OptionC", ExecuteOptionC);
+`string option = GetOption();`
 
-return options.GetAction(option)(id);
+`var options = new Registry<string, long, Func<long, string>>(ExecuteOptionA);`
+
+`options.Register("OptionA", ExecuteOptionA);`
+
+`options.Register("OptionB", ExecuteOptionB);`
+
+`options.Register("OptionC", ExecuteOptionC);`
+
+`return options.GetAction(option)(id);`

@@ -5,31 +5,32 @@ A replacement for switch statements using a dictionary object and generics.
 
 Example:
 
-`long id = GetId();`
+```long id = GetId();
 
-`string option = GetOption();`
+string option = GetOption();
 
-`switch (option)`
+switch (option)
 
-`{`
+{
 
-`   case "OptionA":`
+   case "OptionA":
 
-`       return ExecuteOptionA(id);`
+       return ExecuteOptionA(id);
 
-`   case "OptionB":`
+   case "OptionB":
 
-`       return ExecuteOptionB(id);`
+       return ExecuteOptionB(id);
 
-`   case "OptionC":`
+   case "OptionC":
 
-`       return ExecuteOptionC(id);`
+       return ExecuteOptionC(id);
 
-`   default:`
+   default:
 
-`       return ExecuteOptionA(id);`
+       return ExecuteOptionA(id);
 
-`}`
+}
+```
 
 This code using the Registry library;
 
